@@ -62,6 +62,17 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
         // Пишем код для задачи 4
+        int bottlesPerMinute = 8;
+
+        int bottlesIn20Minutes = bottlesPerMinute * 20;
+        int bottlesIn24Hours = bottlesPerMinute * 60 * 24;
+        int bottlesIn3Days = bottlesPerMinute * 60 * 24 * 3;
+        int bottlesIn1Month = bottlesPerMinute * 60 * 24 * 30;
+
+        System.out.println("За 20 минут машина произвела " + bottlesIn20Minutes + " штук бутылок");
+        System.out.println("За сутки машина произвела " + bottlesIn24Hours + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + bottlesIn1Month + " штук бутылок");
     }
 
     public static void task5 () {
