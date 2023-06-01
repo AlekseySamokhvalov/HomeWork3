@@ -32,11 +32,19 @@ public class Main {
     public static void task2 () {
         System.out.println("Задача 2");
         // Пишем код для задачи 2
+        float a = 27.12F;
+        long b = 987678965549L;
+        double c = 2.786;
+        short d = 569;
+        short e = -159;
+        int f = 27897;
+        byte g = 67;
     }
 
     public static void task3 () {
         System.out.println("Задача 3");
         // Пишем код для задачи 3
+
     }
 
     public static void task4 () {
