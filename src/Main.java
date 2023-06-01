@@ -110,6 +110,23 @@ public class Main {
     public static void task7 () {
         System.out.println("Задача 7");
         // Пишем код для задачи 7
+        int weightToLose = 7*1000; // количество грамм, которое нужно потерять
+        int minWeightLossPerDay = 250; // минимальное количество грамм, которое можно потерять за день
+        int maxWeightLossPerDay = 500; // максимальное количество грамм, которое можно потерять за день
+
+        // Расчёт количества дней для достижения результата при каждой из возможных скоростей похудения
+        int daysToLoseMin = weightToLose / minWeightLossPerDay;
+        int daysToLoseMax = weightToLose / maxWeightLossPerDay;
+
+        // Расчёт средней скорости похудения и количества дней для достижения результата
+        int averageWeightLossPerDay = (minWeightLossPerDay + maxWeightLossPerDay) / 2;
+        int daysToLoseAvg = weightToLose / averageWeightLossPerDay;
+
+        // Вывод результатов в консоль
+        System.out.println("Для похудения на " + (float) weightToLose / 1000 + " кг:");
+        System.out.println("- при уменьшении веса на " + minWeightLossPerDay + " грамм в день потребуется " + daysToLoseMin + " дней");
+        System.out.println("- при уменьшении веса на " + maxWeightLossPerDay + " грамм в день потребуется " + daysToLoseMax + " дней");
+        System.out.println("- при уменьшении веса на среднее значение между " + minWeightLossPerDay + " и " + maxWeightLossPerDay + " грамм в день (" + averageWeightLossPerDay + " грамм) потребуется около " + daysToLoseAvg + " дней");
     }
 
     public static void task8 () {
