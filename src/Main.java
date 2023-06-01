@@ -14,6 +14,19 @@ public class Main {
     public static void task1 () {
         System.out.println("Задача 1");
         // Пишем код для задачи 1
+        int firstVariable = 1;
+        byte secondVariable = 2;
+        short thirdVariable = 3;
+        long fourthVariable = 4L;
+        float fifthVariable = 5.0F;
+        double sixthVariable = 6;
+
+        System.out.println("Значение переменной firstVariable с типом int равно " + firstVariable);
+        System.out.println("Значение переменной secondVariable с типом byte равно " + secondVariable);
+        System.out.println("Значение переменной thirdVariable с типом short равно " + thirdVariable);
+        System.out.println("Значение переменной fourthVariable с типом long равно " + fourthVariable);
+        System.out.println("Значение переменной fifthVariable с типом float равно " + fifthVariable);
+        System.out.println("Значение переменной sixthVariable с типом double равно " + sixthVariable);
     }
 
     public static void task2 () {
