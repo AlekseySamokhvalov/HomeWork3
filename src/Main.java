@@ -39,12 +39,24 @@ public class Main {
         short e = -159;
         int f = 27897;
         byte g = 67;
+        System.out.println("Переменная a = " + a);
+        System.out.println("Переменная b = " + b);
+        System.out.println("Переменная c = " + c);
+        System.out.println("Переменная d = " + d);
+        System.out.println("Переменная e = " + e);
+        System.out.println("Переменная f = " + f);
+        System.out.println("Переменная g = " + g);
     }
 
     public static void task3 () {
         System.out.println("Задача 3");
         // Пишем код для задачи 3
-
+        short studentsLP = 23;
+        short studentsAS = 27;
+        short studentsEA = 30;
+        short totalSheets = 480;
+        int sheets = totalSheets/(studentsLP + studentsAS + studentsEA);
+        System.out.println("На каждого ученика рассчитано " +sheets + " листов бумаги");
     }
 
     public static void task4 () {
