@@ -92,6 +92,19 @@ public class Main {
     public static void task6 () {
         System.out.println("Задача 6");
         // Пишем код для задачи 6
+        int bananas = 5;
+        int bananaWeight = 80;
+        int milk = 200;
+        float milkGr100 = 105;
+        int icecream = 2;
+        int icecreamWeight = 100;
+        int eggs = 4;
+        int eggWeight = 70;
+
+        float totalWeight = bananas*bananaWeight + milk*milkGr100/100 + icecream*icecreamWeight + eggs*eggWeight;
+        float totalWeightInKg = totalWeight/1000;
+
+        System.out.println("Завтрак весит " + totalWeight + " грамм (" + totalWeightInKg + " килограмма)");
     }
 
     public static void task7 () {
