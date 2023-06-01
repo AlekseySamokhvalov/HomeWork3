@@ -132,5 +132,27 @@ public class Main {
     public static void task8 () {
         System.out.println("Задача 8");
         // Пишем код для задачи 8
+        // Зарплаты сотрудников
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int kristinaSalary = 76230;
+
+        // Рассчитываем повышение зарплаты и годовой доход
+        double mashaSalaryIncreased = mashaSalary * 1.1;
+        double denisSalaryIncreased = denisSalary * 1.1;
+        double kristinaSalaryIncreased = kristinaSalary * 1.1;
+
+        double mashaAnnualIncome = mashaSalary * 12;
+        double denisAnnualIncome = denisSalary * 12;
+        double kristinaAnnualIncome = kristinaSalary * 12;
+
+        double mashaAnnualIncomeIncreased = mashaSalaryIncreased * 12;
+        double denisAnnualIncomeIncreased = denisSalaryIncreased * 12;
+        double kristinaAnnualIncomeIncreased = kristinaSalaryIncreased * 12;
+
+        // Выводим результаты в консоль
+        System.out.println("Маша(получала "+ mashaSalary +") теперь получает " + mashaSalaryIncreased + " рублей. Годовой доход вырос на " + (mashaAnnualIncomeIncreased - mashaAnnualIncome) + " рублей");
+        System.out.println("Денис(получал "+ denisSalary +")  теперь получает " + denisSalaryIncreased + " рублей. Годовой доход вырос на " + (denisAnnualIncomeIncreased - denisAnnualIncome) + " рублей");
+        System.out.println("Кристина(получала "+ kristinaSalary +")  теперь получает " + kristinaSalaryIncreased + " рублей. Годовой доход вырос на " + (kristinaAnnualIncomeIncreased - kristinaAnnualIncome) + " рублей");
     }
 }
