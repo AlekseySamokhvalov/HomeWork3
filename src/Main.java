@@ -78,6 +78,15 @@ public class Main {
     public static void task5 () {
         System.out.println("Задача 5");
         // Пишем код для задачи 5
+        int totalCans = 120;
+        int whiteCansPerClass = 2;
+        int brownCansPerClass = 4;
+
+        int numClasses = totalCans / (whiteCansPerClass + brownCansPerClass);
+        int whiteCans = numClasses * whiteCansPerClass;
+        int brownCans = numClasses * brownCansPerClass;
+
+        System.out.println("В школе, где " + numClasses + " классов, нужно " + whiteCans + " банок белой краски и " + brownCans + " банок коричневой краски");
     }
 
     public static void task6 () {
