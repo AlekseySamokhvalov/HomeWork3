@@ -110,20 +110,20 @@ public class Main {
     public static void task7 () {
         System.out.println("Задача 7");
         // Пишем код для задачи 7
-        int weightToLose = 7*1000; // количество грамм, которое нужно потерять
-        int minWeightLossPerDay = 250; // минимальное количество грамм, которое можно потерять за день
-        int maxWeightLossPerDay = 500; // максимальное количество грамм, которое можно потерять за день
+        float weightToLose = (float) (7*1000);// количество грамм, которое нужно потерять
+        float minWeightLossPerDay = 250.0f; // минимальное количество грамм, которое можно потерять за день
+        float maxWeightLossPerDay = 500.0f; // максимальное количество грамм, которое можно потерять за день
 
         // Расчёт количества дней для достижения результата при каждой из возможных скоростей похудения
-        int daysToLoseMin = weightToLose / minWeightLossPerDay;
-        int daysToLoseMax = weightToLose / maxWeightLossPerDay;
+        float daysToLoseMin = weightToLose / minWeightLossPerDay;
+        float daysToLoseMax = weightToLose / maxWeightLossPerDay;
 
         // Расчёт средней скорости похудения и количества дней для достижения результата
-        int averageWeightLossPerDay = (minWeightLossPerDay + maxWeightLossPerDay) / 2;
-        int daysToLoseAvg = weightToLose / averageWeightLossPerDay;
+        float averageWeightLossPerDay = (minWeightLossPerDay + maxWeightLossPerDay) / 2;
+        float daysToLoseAvg = weightToLose / averageWeightLossPerDay;
 
         // Вывод результатов в консоль
-        System.out.println("Для похудения на " + (float) weightToLose / 1000 + " кг:");
+        System.out.println("Для похудения на " + weightToLose / 1000 + " кг:");
         System.out.println("- при уменьшении веса на " + minWeightLossPerDay + " грамм в день потребуется " + daysToLoseMin + " дней");
         System.out.println("- при уменьшении веса на " + maxWeightLossPerDay + " грамм в день потребуется " + daysToLoseMax + " дней");
         System.out.println("- при уменьшении веса на среднее значение между " + minWeightLossPerDay + " и " + maxWeightLossPerDay + " грамм в день (" + averageWeightLossPerDay + " грамм) потребуется около " + daysToLoseAvg + " дней");
@@ -138,9 +138,9 @@ public class Main {
         int kristinaSalary = 76230;
 
         // Рассчитываем повышение зарплаты и годовой доход
-        double mashaSalaryIncreased = mashaSalary * 1.1;
-        double denisSalaryIncreased = denisSalary * 1.1;
-        double kristinaSalaryIncreased = kristinaSalary * 1.1;
+        float mashaSalaryIncreased = (float) ( mashaSalary * 1.1);
+        float denisSalaryIncreased = (float) (denisSalary * 1.1);
+        float kristinaSalaryIncreased = (float) (kristinaSalary * 1.1);
 
         double mashaAnnualIncome = mashaSalary * 12;
         double denisAnnualIncome = denisSalary * 12;
